@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	
+    <title>Convertr</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+	
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+	<link href="css/background.css" rel="stylesheet" type="text/css" />
+	<link href="css/select.css" rel="stylesheet" />
+
+    <link href="images/c-black.svg" rel="icon" />
+</head>
+
+
+
+<body>
+
+    <main>
+            
+        <h1 id="title" class="typer"><img src="images/c-white.svg" id="logo"></img>onvertr.</h1>
+        
+        <div id="box">
+
+            <div id="measure-selector">
+                <div id ="unit-name-dropdown" class="select animated">
+                    
+                    <input type="radio" name="group-0">
+                    <i class="toggle icon icon-arrow-down"></i>
+                    <i class="toggle icon icon-arrow-up"></i>
+                    <span class="placeholder">Select a measure</span>
+                    <label class="option">
+                        <input id="mass" type="radio" name="group-0">
+                        <span class="title animated fadeIn"><i class="iconify icon" data-icon="mdi:scale" data-inline="false"
+                        data-height="16"
+                        style="color:#92a8d1; top: 4px;"
+                        ></i>&nbsp;Mass</span>
+                    </label>
+                    <label class="option">
+                        <input id="length" type="radio" name="group-0">
+                        <span class="title animated fadeIn">
+                            <i 
+                                class="icon material-icons" style="top:3px; padding: 0;"
+                            >
+                                straighten
+                            </i>
+                            Length
+                        </span>
+                    </label>
+                    <label class="option">
+                        <input id="speed" type="radio" name="group-0">
+                        <span class="title animated fadeIn"><i class="icon icon-speedometer"></i>Speed</span>
+                    </label>
+                    <label class="option">
+                        <input id="temperature" type="radio" name="group-0">
+                        <span class="title animated fadeIn"><i class="iconify icon" data-icon="fa-solid:thermometer-half" data-inline="false" data-width="16" 
+                        data-height="16"
+                        style="color:#92a8d1"
+                        ></i>&nbsp;Temperature</span>
+                    </label>
+                    <label class="option">
+                        <input id="currency" type="radio" name="group-0">
+                        <span class="title animated fadeIn">
+                            <i class="icon material-icons" style="top:2px;">attach_money</i>Currency
+                        </span>
+                    </label>
+                    <label class="option">
+                        <input id="date" type="radio" name="group-0">
+                        <span class="title animated fadeIn">
+                            <i class="icon icon-calendar"
+                                style="padding: 0;"
+                            ></i>
+                            Date
+                        </span>
+                    </label>
+                </div>
+            </div>
+
+
+
+            <div id="theflex">
+
+                <div id="input-pair-1">
+                    <input id="input-1" type="number" placeholder="Input">
+                    <div id="unit-dropdown-1" class="select animated">
+                    
+                        <input type="radio" name="group-1">
+                        <i class="toggle icon icon-arrow-down"></i>
+                        <i class="toggle icon icon-arrow-up"></i>
+                        <span class="placeholder">&ensp;Choose...</span>
+                        
+
+                    </div>
+                </div>
+
+                <div id="arrows-container">
+                    <img id="arrow-up" class="arrow" src="images/arrow-up.svg"/>
+                    <img id="arrow-down" class="arrow" src="images/arrow-down.svg"/>
+                </div>
+                <!-- <img id="arrows" src="images/arrows.svg"/> -->
+            
+                <div id="input-pair-2">
+                    <input id="input-2" type="number" placeholder="Output" disabled>
+                    <div id="unit-dropdown-2" class="select animated">
+
+                        <input type="radio" name="group-2">
+                        <i class="toggle icon icon-arrow-down"></i>
+                        <i class="toggle icon icon-arrow-up"></i>
+                        <span class="placeholder">&ensp;Choose...</span>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div> 
+
+        <p id="footer" class="typer">- By Adarsh Gadala</p>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+
+</body>
+
+</html>

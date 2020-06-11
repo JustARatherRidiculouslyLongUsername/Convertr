@@ -1,0 +1,389 @@
+/* h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 3em;
+  letter-spacing: 0px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.02), 2px 2px rgba(0, 0, 0, 0.02), 3px 3px rgba(0, 0, 0, 0.02), 4px 4px rgba(0, 0, 0, 0.02), 5px 5px rgba(0, 0, 0, 0.02), 6px 6px rgba(0, 0, 0, 0.02), 7px 7px rgba(0, 0, 0, 0.02);
+} */
+
+.select{
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: auto;
+  width: 35%;
+  border-bottom: 0px;
+  border-radius: 3px;
+  font-size: 12px;
+  box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
+}
+
+.select > i.toggle {
+  position: absolute;
+  z-index: 4;
+  right: 1.5em;
+  top: 1.3em;
+  color: #ccc;
+}
+.select .title,
+.select .placeholder {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1.5em 2em;
+  background: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.select > input {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;
+  cursor: pointer;
+}
+.select > input:checked ~ i.toggle.icon-arrow-down {
+  display: none;
+}
+.select > input:checked ~ i.toggle.icon-arrow-up {
+  display: block;
+}
+.select > input:checked div.options label.option .title {
+  display: none !important;
+}
+.select > input:not(:checked) {
+  z-index: 4;
+}
+.select > input:not(:checked) ~ label.option > span.title {
+  display: none;
+}
+.select > input:not(:checked) ~ i.toggle.icon-arrow-up {
+  display: none;
+}
+.select > input:not(:checked) ~ i.toggle.icon-arrow-down {
+  display: block;
+}
+.select > input:disabled {
+  cursor: no-drop;
+}
+.select > span.placeholder {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: 100%;
+  color: #999;
+  border-top: 0px;
+}
+.select label.option {
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  transition: all 1s ease-out;
+}
+.select label.option span.title {
+  position: relative;
+  z-index: 2;
+  transition: background .3s ease-out;
+}
+.select label.option span.title i.icon {
+  padding-right: 8px;
+  color: #92a8d1;
+}
+.select label.option span.title:hover {
+  color: #fff;
+  background: rgb(75, 75, 75);
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.select label.option input {
+  display: none;
+}
+.select label.option input:checked ~ span.title {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  top: 0px;
+  font-size: 12px;
+  background: #fff;
+  border-top: 0px;
+  box-shadow: none;
+  color: inherit;
+  width: 100%;
+}
+.select label.option input:disabled ~ span.title {
+  background: #f9f9f9 !important;
+  color: #aaa;
+}
+.select label.option input:disabled ~ span.title:hover {
+  color: #aaa;
+  background: none;
+  cursor: no-drop;
+}
+
+
+
+
+
+
+
+
+
+.unit-dropdown-1{
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: auto;
+  width: 35%;
+  border-bottom: 0px;
+  border-radius: 3px;
+  font-size: 12px;
+  box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
+}
+
+.unit-dropdown-1 > i.toggle {
+  position: absolute;
+  z-index: 4;
+  right: 1.5em;
+  top: 1.6em;
+  color: #ccc;
+}
+.unit-dropdown-1 .title,
+.unit-dropdown-1 .placeholder {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1.5em 2em;
+  background: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.unit-dropdown-1 > input {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;
+  cursor: pointer;
+}
+.unit-dropdown-1 > input:checked ~ i.toggle.icon-arrow-down {
+  display: none;
+}
+.unit-dropdown-1 > input:checked ~ i.toggle.icon-arrow-up {
+  display: block;
+}
+.unit-dropdown-1 > input:checked div.options label.option .title {
+  display: none !important;
+}
+.unit-dropdown-1 > input:not(:checked) {
+  z-index: 4;
+}
+.unit-dropdown-1 > input:not(:checked) ~ label.option > span.title {
+  display: none;
+}
+.unit-dropdown-1 > input:not(:checked) ~ i.toggle.icon-arrow-up {
+  display: none;
+}
+.unit-dropdown-1 > input:not(:checked) ~ i.toggle.icon-arrow-down {
+  display: block;
+}
+.unit-dropdown-1 > input:disabled {
+  cursor: no-drop;
+}
+.unit-dropdown-1 > span.placeholder {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: 100%;
+  color: #999;
+  border-top: 0px;
+}
+.unit-dropdown-1 label.option {
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  transition: all 1s ease-out;
+}
+.unit-dropdown-1 label.option span.title {
+  position: relative;
+  z-index: 2;
+  transition: background .3s ease-out;
+}
+.unit-dropdown-1 label.option span.title i.icon {
+  padding-right: 8px;
+  color: #92a8d1;
+}
+.unit-dropdown-1 label.option span.title:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.unit-dropdown-1 label.option input {
+  display: none;
+}
+.unit-dropdown-1 label.option input:checked ~ span.title {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  top: 0px;
+  font-size: 12px;
+  background: #fff;
+  border-top: 0px;
+  box-shadow: none;
+  color: inherit;
+  width: 100%;
+}
+.unit-dropdown-1 label.option input:disabled ~ span.title {
+  background: #f9f9f9 !important;
+  color: #aaa;
+}
+.unit-dropdown-1 label.option input:disabled ~ span.title:hover {
+  color: #aaa;
+  background: none;
+  cursor: no-drop;
+}
+
+
+
+
+
+.unit-dropdown-2{
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: auto;
+  width: 35%;
+  border-bottom: 0px;
+  border-radius: 3px;
+  font-size: 12px;
+  box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
+}
+
+.unit-dropdown-2 > i.toggle {
+  position: absolute;
+  z-index: 4;
+  right: 1.5em;
+  top: 1.6em;
+  color: #ccc;
+}
+.unit-dropdown-2 .title,
+.unit-dropdown-2 .placeholder {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1.5em 2em;
+  background: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.unit-dropdown-2 > input {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  opacity: 0;
+  cursor: pointer;
+}
+.unit-dropdown-2 > input:checked ~ i.toggle.icon-arrow-down {
+  display: none;
+}
+.unit-dropdown-2 > input:checked ~ i.toggle.icon-arrow-up {
+  display: block;
+}
+.unit-dropdown-2 > input:checked div.options label.option .title {
+  display: none !important;
+}
+.unit-dropdown-2 > input:not(:checked) {
+  z-index: 4;
+}
+.unit-dropdown-2 > input:not(:checked) ~ label.option > span.title {
+  display: none;
+}
+.unit-dropdown-2 > input:not(:checked) ~ i.toggle.icon-arrow-up {
+  display: none;
+}
+.unit-dropdown-2 > input:not(:checked) ~ i.toggle.icon-arrow-down {
+  display: block;
+}
+.unit-dropdown-2 > input:disabled {
+  cursor: no-drop;
+}
+.unit-dropdown-2 > span.placeholder {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  width: 100%;
+  color: #999;
+  border-top: 0px;
+}
+.unit-dropdown-2 label.option {
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  transition: all 1s ease-out;
+}
+.unit-dropdown-2 label.option span.title {
+  position: relative;
+  z-index: 2;
+  transition: background .3s ease-out;
+}
+.unit-dropdown-2 label.option span.title i.icon {
+  padding-right: 8px;
+  color: #92a8d1;
+}
+.unit-dropdown-2 label.option span.title:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.unit-dropdown-2 label.option input {
+  display: none;
+}
+.unit-dropdown-2 label.option input:checked ~ span.title {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  top: 0px;
+  font-size: 12px;
+  background: #fff;
+  border-top: 0px;
+  box-shadow: none;
+  color: inherit;
+  width: 100%;
+}
+.unit-dropdown-2 label.option input:disabled ~ span.title {
+  background: #f9f9f9 !important;
+  color: #aaa;
+}
+.unit-dropdown-2 label.option input:disabled ~ span.title:hover {
+  color: #aaa;
+  background: none;
+  cursor: no-drop;
+}
+
+.icon {
+    width: 16px;
+    position: relative;
+    top: 2px;
+    font-size: 16px;
+    color: #92a8d1;
+}
+
+/* .icon-arrow-down, .icon-arrow-down {
+    top: -5px;
+} */
